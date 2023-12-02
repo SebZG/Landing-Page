@@ -21,7 +21,6 @@ header {
 	top: 0;
 	left: 0;
 	background-color: #202a25;
-	/* padding-inline: 1rem;	 */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -37,30 +36,50 @@ header {
 ul {
 	list-style-type: none;
 	font-size: 1.25rem;
+	margin-right: 1rem;
 }
 
 ul li {
 	display: inline-block;
-	/* padding-inline: 1rem; */
-	padding: 1rem;
+	width: 80px;
+	/* padding: 0.5rem; */
 	/* background-color: #f93943; */
 }
 
-ul li:hover,
+/* ul li:hover,
 ul li:focus {
+	background-color: #f93943;
+} */
+
+ul li a {
+	display: inline-block;
+	/* width: 80px; */
+	color: #ffefd5;
+	text-decoration: none;
+	/* background-color: #f93943; */
+	padding: 1rem;
+}
+
+ul li a:hover,
+ul li a:focus {
 	background-color: #f93943;
 }
 
-ul li a {
-	color: #ffefd5;
-	text-decoration: none;
+.landing-container {
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-.landing-container {
-	margin-top: 10rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.landing-container h2 {
+	margin: 2rem 0;
+	font-size: 2rem;
+}
+
+img {
+	width: 40%;
 }
 
 .form-container {
