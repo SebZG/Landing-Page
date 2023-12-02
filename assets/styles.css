@@ -16,8 +16,12 @@ body {
 }
 
 header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 	background-color: #202a25;
-	padding: 0.5rem 5%;	
+	/* padding-inline: 1rem;	 */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -25,17 +29,20 @@ header {
 
 .logo-header {
 	color: #f93943;
-	padding: 1rem 1rem 1rem 7rem;
+	margin: auto 1rem;
+	font-size: 1.5rem;
+	/* line-height: 3.5rem; */
 }
 
 ul {
 	list-style-type: none;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 ul li {
 	display: inline-block;
-	padding: 1.5rem;
+	/* padding-inline: 1rem; */
+	padding: 1rem;
 	/* background-color: #f93943; */
 }
 
@@ -50,7 +57,7 @@ ul li a {
 }
 
 .landing-container {
-	margin-top: 2rem;
+	margin-top: 10rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -61,14 +68,14 @@ ul li a {
 	border-radius: 0.5rem;
 	max-width: 400px;
 	font-size: 1.25rem;
-	margin: 3rem auto;
+	margin: 5rem auto;
 	/* background-color: #f93943; */
 	background-color: #7eb2dd;
 	color: #202a25;
 }
 
 .form-container h3 {
-	padding-top: 1rem;
+	padding-top: 1.5rem;
 	text-align: center;
 }
 
@@ -109,7 +116,7 @@ input[type="submit"]:hover {
 
 footer {
 	background-color: #202a25;
-	padding: 2rem;
+	padding: 1rem;
 }
 
 footer h4 {
