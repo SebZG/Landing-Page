@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
-/* RESET */
+/* 
+RESET 
+*/
 
 * {
 	margin: 0;
@@ -19,7 +21,9 @@ button {
 	font: inherit;
 }
 
-/* VARIABLES */
+/* 
+VARIABLES 
+*/
 
 :root {
 	/* FONTS */
@@ -27,19 +31,21 @@ button {
 
 	/* COLORS */
 	--BG-B: #202a25;
+	--BG-BLUE: #7eb2dd;
 	--BG-R: #f93943;
 	--BG-W: #ffefd5;
 	--BOX-SHADOW: #202a25ce;
+	--BTN-HOVER: #f95639;
+	--BTN-R: #f93943;
+	--TXT-B: #202a25;
 	--TXT-HOVER: #f93943;
 	--TXT-R: #f93943;
 	--TXT-W: #ffefd5;
-	--TXT-B: #202a25;
-	--BG-BLUE: #7eb2dd;
-	--BTN-R: #f93943;
-	--BTN-HOVER: #f95639;
 }
 
-/* GENERAL */
+/* 
+GENERAL 
+*/
 
 html {
 	scroll-behavior: smooth;
@@ -50,13 +56,13 @@ html {
 	background-color: var(--BG-W);
 }
 
-/* HEADER */
+/* 
+HEADER 
+*/
 
 .header {
-	width: 100%;
-	position: fixed;
+	position: sticky;
 	top: 0;
-	left: 0;
 	background-color: var(--BG-B);
 	display: flex;
 	flex-direction: row;
@@ -70,44 +76,39 @@ html {
 	/* line-height: 3.5rem; */
 }
 
-/* NAV */
+/* 
+NAV 
+*/
 
 .nav__ul {
 	list-style-type: none;
 	font-size: 1.25rem;
-	margin-right: 1rem;
+	/* margin-right: 1rem; */
 }
 
 .nav__li {
 	display: inline-block;
-	width: 80px;
-	/* padding: 0.5rem; */
-	/* background-color: #f93943; */
+	margin-left: -5px;
+	/* background-color: var(--BG-R); */
 }
 
-/* ul li:hover,
+ul li:hover,
 ul li:focus {
-	background-color: #f93943;
-} */
-
-.nav__a {
-	display: inline-block;
-	/* width: 80px; */
-	color: var(--TXT-W);
-	text-decoration: none;
-	/* background-color: var(--BG-W) */
-	padding: 1rem;
-}
-
-.nav__a:hover,
-.nav__a:focus {
 	background-color: var(--TXT-HOVER);
 }
 
-/* LANDING */
+.nav__a {
+	display: inline-block;
+	color: var(--TXT-W);
+	text-decoration: none;
+	padding: 1rem;
+}
+
+/* 
+LANDING 
+*/
 
 .landing {
-	margin-top: 4rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -119,11 +120,13 @@ ul li:focus {
 	font-size: 2rem;
 }
 
-.landing__img {
+/* .landing__img {
 	width: 40%;
-}
+} */
 
-/* FORM */
+/* 
+FORM 
+*/
 
 .form-container {
 	box-shadow: 0.1rem 0.1rem 0.5rem 0.25rem var(--BOX-SHADOW);
@@ -153,7 +156,7 @@ ul li:focus {
 .form__input[type="text"],
 .form__input[type="email"],
 .form__select {
-	/* width: 100%; */
+	width: 100%;
 	padding: 0.3rem;
 	margin: 0.3rem 0;
 	display: inline-block;
@@ -176,7 +179,9 @@ ul li:focus {
 	background-color: var(--BTN-HOVER);
 }
 
-/* FOOTER */
+/* 
+FOOTER 
+*/
 
 .footer {
 	background-color: var(--BG-B);
