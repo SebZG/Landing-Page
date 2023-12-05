@@ -1,2 +1,2 @@
 # Landing Page
-A Landing Page with a contact form
+A landing page with a contact form
