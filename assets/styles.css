@@ -95,6 +95,7 @@ NAV
 ul li:hover,
 ul li:focus {
 	background-color: var(--TXT-HOVER);
+	transition: background-color 0.25s ease;
 }
 
 .nav__a {
@@ -117,7 +118,7 @@ LANDING
 
 .landing__h2 {
 	margin: 2rem 0;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 /* .landing__img {
@@ -177,6 +178,7 @@ FORM
 
 .form__input[type="submit"]:hover {
 	background-color: var(--BTN-HOVER);
+	transition: background-color 0.25s ease;
 }
 
 /* 
